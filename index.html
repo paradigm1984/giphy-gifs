@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+	
+	<meta charset="UTF-8">
+	<title> Gifs!!! </title>
+
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="assets/giphystyle.css">
+
+	</head>
+ 
+	<body id="background">
+
+	<div class="row">
+		<div class="col-xs-3 spacer"></div>
+		<div class="col-xs-6">
+			<div class="jumbotron green-container">
+				<h1 class="header-text"> Animal GIFS A la Carté! </h1>
+			</div> 
+		</div><!--END "col-xs-6" -->
+		<div class="col-xs-3 spacer"> <!--spacerrrrr --></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-xs-8">
+			<div class="button-container">
+				<button class= "btn-primary btn" id="platypus">Platypus</button>
+				<button class= "btn-primary btn" id="emu">Emu</button>
+				<button class= "btn-primary btn" id="honeyBadger">Honey Badger</button>
+				<button class= "btn-primary btn" id="turtle">Turtle</button>
+				<button class= "btn-primary btn" id="koala">Koala</button>
+			</div>
+		</div><!--END "col-xs-8" -->
+		
+		<div class="col-xs-4">
+			<div class="button-adder-container">
+				<form id="submit-form form">
+				<label class="form-text" for="animal-input">Add a critter</label>
+				<input class="type-space" type="text" id="animal-input"><br>
+
+				<!-- Button triggers new movie to be added -->
+				<input class="add-a-critter" id="add-movie" type="submit" value="Add">
+				</form>
+			</div>
+		</div>
+	</div><!--END "row" -->
+	<br>
+	<div class="row">
+		<div class="col-xs-2 spacer"> <!--spacerrrrr --></div>
+		<div class="col-xs-8">
+			<div class="navy-container">
+				<div class="navy-container-title"> GIFS 4 U </div>
+				<div class="gif-dump" id="gifDump">
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2 spacer"> <!--spacerrrrr --></div>
+
+
+ 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+	
+		<script type="text/javascript" src="assets/giphyscript.js"></script>
+
+	</body>
+ 
+</html>
