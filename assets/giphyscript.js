@@ -66,16 +66,11 @@ $(document).ready(function() {
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal
         + "&api_key=dc6zaTOxFJmzC&limit=10";
 
-        console.log(queryURL);
-
         // making the ajax call to giphy
         $.ajax ({
             url: queryURL,
-            method: "GET",
-
+            method: "GET"
         }).done(function(response) {
-
-            console.log(response);
 
             //clears anything in the gif div
             $("#gifDump").empty()
@@ -104,12 +99,14 @@ $(document).ready(function() {
                 var gifRating = $("<p>").text("Rating: " + results[i].rating);
                 gifDiv.append(gifRating);
 
+                gifRating.addClass("gif-rating");
+
                 /* 4. creates img tags that will contain both still and 
-                animated GIF info for each gif thats brought in */
+                animated GIF info for each gif thats brought in. */
                 var gifImage = $("<img>");
-                gifImage.attr("src", results[i].images);
-                gifImage.attr("data-still", results[i].images);
-                gifImage.attr("data-animate", results[i].images);
+                gifImage.attr("src", results[i].images.fixed_height_still.url);
+                gifImage.attr("data-still", results[i].images.fixed_height_still.url);
+                gifImage.attr("data-animate", results[i].images.original.url);
                 // sets the default state to still
                 gifImage.attr("data-state", "still");
                 // giving the img tags a class
@@ -127,6 +124,8 @@ $(document).ready(function() {
     when the page loads */
     startingButtons();
     addNewButton();
+
+     /* =========================== LOGIC ========================== */
 
     // event listeners for clicking the gifs to animate / freeze
     /* i think you can do $("#gifDump").on("click" ...) so it

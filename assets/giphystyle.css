@@ -55,8 +55,6 @@ COLORS:
 #B5B9BD -- gray
 */
 
-
-
 body#background {
 
 	background-image: url("zz.png")!important;
@@ -122,12 +120,24 @@ button.btn {
 	font-family: helvetica;
 }
 
+
+p.form-title {
+
+	color: #EAC67A;
+	font-family: helvetica;
+	margin: 5%;
+	font-weight: bolder;
+	font-size: 1.1em;
+
+}
+
 label.form-text {
 
 	color: #EAC67A;
 	font-family: helvetica;
-	margin: 3% 0% 0% 0%;
+	margin: 2% 2% 2% 2%;
 }
+
 
 input.add-a-critter {
 
@@ -139,7 +149,6 @@ input.add-a-critter {
 	font-family: helvetica;
 	font-weight: bolder;
 	padding:2% 4% 2% 4%;
-
 }
 
 input.type-space {
@@ -160,7 +169,6 @@ div.navy-container {
 	border-color: #B5B9BD;
 	padding: 2%;
 	margin:2%;
-
 }
 
 div.navy-container-title {
@@ -177,8 +185,30 @@ div.navy-container-title {
 div.gif-dump {
 
 	margin:0%;
-	padding: 2%;
+}
+
+/* ================= not in the HTML ================= */
+
+div.gif-div {
+
+	margin:5%;
+}
+
+img.div-img {
+	
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #B5B9BD;
 }
 
 
+p.gif-rating{
+
+	
+	color: #EAC67A;
+	font-weight: bold;
+	font-family: helvetica;
+	margin: 3% 3% 6% 6%;
+}
 
